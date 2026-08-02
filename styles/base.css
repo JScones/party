@@ -4,6 +4,10 @@ html {
 }
 
 body {
+    font-family: 'beth', sans-serif;
+    background-color: #f1eee3;
+    color: #aa2e36;
+
     /* Set your default body typography here using rem */
     font-size: 1rem;       /* Equals 16px by default */
     line-height: 1.5;      /* Improves readability */
