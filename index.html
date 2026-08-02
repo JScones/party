@@ -4,10 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party</title>
+
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Coming Soon...</h1>
-    <p>Welcome to my party website.</p>
+<div class="base-container">
+
+    <div class="top">
+        <div class="curved-text-container">
+            <svg viewBox="100 20 100 60" width="150" height="60">
+                <defs>
+                    <!-- Perfect Circle Path (Radius = 100, Center = 150, 150) -->
+                    <path id="circlePath"
+                          d="M 150,50
+         a 150,150 0 1,1 -0.1,0"
+                          transform="rotate(-40 150 150)"/>
+                    fill="none"/>
+                </defs>
+
+                <text class="slopes" letter-spacing="3"
+                      fill="#aa2e36"
+                >
+                    <textPath href="#circlePath" startOffset="0%">
+                        YOU'RE INVITED TO
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <div class="disco-container">
+            <img alt="disco ball" src="./assets/disco.svg" width="100%" height="auto"/>
+        </div>
+    </div>
+
+    <div style="position: relative;">
+        <div class="amsterdam names">
+            <p>Josh</p>
+            <p class="smol">&</p>
+            <p>Rachael's</p>
+        </div>
+
+        <div class="hearts-container">
+            <div class="hearts">
+                <img alt="heart" src="./assets/heart-outline.svg" height="auto" class="img-left"/>
+                <img alt="heart" src="./assets/heart.svg" height="auto" class="img-right"/>
+            </div>
+        </div>
+
+        <div class="stars-container-1">
+            <img alt="stars" src="./assets/stars.svg"/>
+        </div>
+    </div>
+
+    <div style="position: relative;">
+        <div class="slopes uppercase flex-center engage">
+            <p>Engagement</p>
+            <p>Party!</p>
+        </div>
+        <div class="cake-container">
+            <img alt="cake" src="./assets/cake.svg"/>
+        </div>
+    </div>
+
+    <div class="pad-1">
+        <div style="position: relative;">
+            <div class="flex-center deets">
+                <img alt="divider" class="pad-1" src="./assets/squiggle.svg" width="40%" height="auto"/>
+                <div class="beth flex-center text-center gap-2">
+                    <p>Saturday 16<sup>th</sup> January 2027</p>
+                    <p>3pm til late - Summer Formalwear</p>
+                    <p>Auckland Normal Intermediate<br/>Poronui Street, Mt Eden</p>
+                </div>
+                <img alt="divider" class="pad-1" src="./assets/squiggle.svg" width="40%" height="auto"/>
+            </div>
+
+            <div class="glasses-container">
+                <img alt="wine" src="./assets/glasses.svg"/>
+            </div>
+        </div>
+
+
+        <div class="slopes uppercase flex-center">
+            <h2>RSVP</h2>
+            <p>Phone <a class="font7" href="tel:02108275772">021 082 75772</a></p>
+            <p>Email <a class="font7" href="mailto:rsvp@bernasconi.studio">rsvp@bernasconi.studio</a></p>
+        </div>
+    </div>
+
+    <div class="pad-1 text-center">
+        <div class="slopes">
+            <h2 class="beth">Our Story</h2>
+            <div class="flex-center gap-1 story">
+                <p>
+                    Our story began in 2020 at a pub quiz, thanks to a group of mutual friends. Week after week, we
+                    battled
+                    through trivia together, and after a year of questionable general knowledge (and discovering we made
+                    a
+                    pretty great team), Josh finally asked Rachael out on a date.
+                </p>
+                <p>
+                    One tray of dumplings and a full The Lord of the Rings trilogy later—a true test of compatibility—we
+                    made it official.
+                </p>
+                <p>
+                    Since then, we've built a life filled with love, laughter, adventures, and just the right amount of
+                    friendly competition. On 20 September 2025, Josh asked Rachael to marry him in Cornwall Park, with
+                    the
+                    help of her best friend and maid of honour, Casey Rei. Thankfully, she said yes!
+                </p>
+                <p>
+                    From the very beginning, we've been incredibly lucky to have such amazing family and friends
+                    cheering us
+                    on. We wanted to celebrate this milestone with everyone who has been part of our journey, so we've
+                    decided to throw one big party with all of you before tying the knot in an intimate ceremony with
+                    our
+                    immediate family at a later date.
+                </p>
+                <p>
+                    Thank you for being part of our story, for your love and support, and for helping shape the memories
+                    we've made along the way. Now there's only one thing left to do—eat, drink, dance, and celebrate
+                    with
+                    the people we love most.
+                </p>
+                <p>
+                    We can't wait to party the night away with you!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pad-1 text-center slopes">
+        <div class="faqs">
+            <h2 class="beth">FAQs</h2>
+            <div class="flex-center gap-2">
+                <details>
+                    <summary>What is Summer Formalwear?</summary>
+                    This means balancing looking good with feeling comfortable in the summer heat.<br/>
+                    We will be mostly inside. <br />
+                    For the women, light and bright, floral/summer colors. No stilettos due to the venue <br/>
+                    For the men, button up shirts, nice pants, jacket optional.
+                </details>
+                <details>
+                    <summary>How do I get there?</summary>
+                    Those of you traveling from Pukekohe, there will be buses. Details TBC. <br/>
+                    There will be parking at the Poronui St and Disraeli St entrances to Auckland Normal Intermediate.
+                    Parking will be available in the staff car parks.
+                    Once on site, make your way to the multi purpose space in the center of the school. There will be
+                    signage.
+                    <button class="img-trigger" popovertarget="zoom-popover" aria-label="Zoom image">
+
+                        <img alt="school map" src="./assets/ani_school_map.jpg" width="100%" height="auto"
+                             class="thumb"/>
+                    </button>
+
+                </details>
+                <details>
+                    <summary>Gifts?</summary>
+                    We don't expect any presents except your presence.
+                    If you would still like to contribute, we would love vouchers for home and decor stores to furnish
+                    our new home.
+                    Otherwise, you can contribute to our party fund here: <br/>
+                    Joshua Bernasconi - 03 0406 0780406 000
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="pad-1 text-center slopes">
+    </div>
+
+    <div id="zoom-popover" popover class="zoom-popover">
+
+        <button
+                popovertarget="zoom-popover"
+                popovertargetaction="hide"
+                class="close-btn"
+                aria-label="Close zoomed view">
+            &times;
+        </button>
+
+        <img
+                id="zoomed-image-1"
+                src="./assets/ani_school_map.jpg"
+                alt="Map"
+                class="large-img"/>
+    </div>
+
+
+</div>
 </body>
 </html>
 

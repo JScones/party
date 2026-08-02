@@ -1,0 +1,49 @@
+html {
+    /* 100% respects the user's browser default (normally 16px) */
+    font-size: 100%;
+}
+
+body {
+    /* Set your default body typography here using rem */
+    font-size: 1rem;       /* Equals 16px by default */
+    line-height: 1.5;      /* Improves readability */
+}
+
+.base-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 800px) {
+        max-width: 750px;
+        margin: auto;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 1.5rem
+}
+
+.pad-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

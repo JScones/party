@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'slopes';
+    src: url('./slopes.woff2') format('woff2'),
+    url('./slopes.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'beth';
+    src: url('./beth_ellen.woff2') format('woff2'),
+    url('./beth_ellen.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'amsterdam';
+    src: url('./amsterdam-two-ttf.woff2') format('woff2'),
+    url('./amsterdam-two-ttf.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'font7';
+    src: url('./font7.woff2') format('woff2');
+    font-display: swap;
+}
+
+.slopes {
+    font-family: 'slopes', sans-serif;
+}
+
+.beth {
+    font-family: 'beth', sans-serif;
+}
+
+.amsterdam {
+    font-family: 'amsterdam', sans-serif;
+}
+
+.font7 {
+    font-family: 'font7', sans-serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
