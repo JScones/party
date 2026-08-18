@@ -131,12 +131,23 @@
 }
 
 .us-pic-container {
-
     @media (max-width: 799px) {
         margin: 0 1rem;
     }
 
+    /* Force <picture> wrapper to respect parent bounds */
+    picture {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Force <img> inside <picture> to fit strictly within container */
     .us-pic {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
 }

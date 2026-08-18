@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Remove dev scripts
+        run: rm -rf scripts/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
