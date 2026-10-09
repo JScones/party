@@ -1,7 +1,3 @@
-@import url('./fonts/fonts.css');
-@import url('./styles/base.css');
-
-
 .top {
     display: flex;
     justify-content: space-between;
