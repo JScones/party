@@ -150,23 +150,20 @@
                 </p>
             </div>
             <div class="us-pic-container">
-                <picture>
-                    <!-- Mobile: standard displays get small, Retina gets medium -->
-                    <source
-                            media="(max-width: 599px)"
-                            srcset="assets/us/us-small.webp 1x, assets/us/us-medium.webp 2x"
-                            type="image/webp">
-
-                    <!-- Tablet/Desktop: standard displays get medium, Retina gets large -->
-                    <source
-                            media="(max-width: 1199px)"
-                            srcset="assets/us/us-medium.webp 1x, assets/us/us-large.webp 2x"
-                            type="image/webp">
-
-                    <source srcset="assets/us/us-large.webp" type="image/webp">
-
-                    <img class="us-pic" src="assets/us/us.jpeg" alt="Us" loading="lazy" />
-                </picture>
+                <img
+                        class="us-pic"
+                        src="assets/us/us-medium.webp"
+                        srcset="
+    assets/us/us-small.webp 400w,
+    assets/us/us-medium.webp 800w,
+    assets/us/us-large.webp 2000w
+  "
+                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 80vw, 728px"
+                        alt="Us"
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="800" />
             </div>
         </div>
     </div>
@@ -191,7 +188,7 @@
                     signage.
                     <button class="img-trigger" popovertarget="zoom-popover" aria-label="Zoom image">
 
-                        <img alt="school map" src="./assets/ani_school_map.jpg" width="100%" height="auto"
+                        <img alt="school map" src="./assets/ani_school_map.jpg" width="100%" height="auto" loading="lazy"
                              class="thumb"/>
                     </button>
 
@@ -202,7 +199,7 @@
                 </details>
                 <details>
                     <summary>Is this a kid friendly event?</summary>
-                    No 😅<br /> 🙅‍♀️👶
+                    No 😅<br/> 🙅‍♀️👶
                 </details>
                 <details>
                     <summary>Gifts?</summary>
