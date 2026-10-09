@@ -230,6 +230,7 @@
                 id="zoomed-image-1"
                 src="./assets/ani_school_map.jpg"
                 alt="Map"
+                loading="lazy"
                 class="large-img"/>
     </div>
 
@@ -239,11 +240,13 @@
 <!-- Cloudflare Web Analytics -->
 <script>
     if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-        const script = document.createElement('script');
-        script.type = 'module';
-        script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
-        script.setAttribute('data-cf-beacon', '{"token": "5da485073daa401c8d6bbbba02199d73"}');
-        document.head.appendChild(script);
+        window.addEventListener('load', () => {
+            const script = document.createElement('script');
+            script.type = 'module';
+            script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+            script.setAttribute('data-cf-beacon', '{"token": "5da485073daa401c8d6bbbba02199d73"}');
+            document.head.appendChild(script);
+        });
     }
 </script>
 <!-- End Cloudflare Web Analytics -->
